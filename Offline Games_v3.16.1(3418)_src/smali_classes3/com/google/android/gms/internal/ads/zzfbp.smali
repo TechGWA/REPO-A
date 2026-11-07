@@ -1,0 +1,100 @@
+.class public final Lcom/google/android/gms/internal/ads/zzfbp;
+.super Ljava/lang/Object;
+.source "r8-map-id-d4127289246a09368a9e1d22b2939b1a8a11eb6f73a9f1427bcf353d8c747739"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/zzfcs;
+
+
+# instance fields
+.field private final zza:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzfbp;->zza:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+.end method
+
+
+# virtual methods
+.method public final zza()Loc/c;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzfbq;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzfbp;->zza:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Lcom/google/android/gms/internal/ads/zzfbq;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/zzhcf;->zza(Ljava/lang/Object;)Loc/c;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    return-object v0
+    .line 13
+    .line 14
+    .line 15
+.end method
+
+.method public final zzb()I
+    .locals 1
+
+    .line 1
+    const/16 v0, 0x1f
+
+    .line 2
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+.end method

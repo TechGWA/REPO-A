@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@id/endcard_container_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.zmaticoo.sdk.base.common.view.DisclaimerView
+            android:gravity="center_horizontal"
+            android:id="@id/disclaimerLayout"
+            android:background="#ff332b2c"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+        <include
+            layout="@layout/container_end_card1_land_scape_middle" />
+    </RelativeLayout>
+    <include
+        layout="@layout/container_end_card_header" />
+</FrameLayout>

@@ -1,0 +1,43 @@
+.class public abstract Lcom/ironsource/adqualitysdk/sdk/i/ƭ;
+.super Lcom/ironsource/adqualitysdk/sdk/i/ﹽ;
+.source "r8-map-id-d4127289246a09368a9e1d22b2939b1a8a11eb6f73a9f1427bcf353d8c747739"
+
+
+# instance fields
+.field public ﻛ:I
+
+.field public ｋ:I
+
+.field public ﾇ:I
+
+.field public ﾒ:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/ironsource/adqualitysdk/sdk/i/ﹽ;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method

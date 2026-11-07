@@ -1,0 +1,45 @@
+.class public abstract Lcom/vungle/ads/internal/task/k;
+.super Ljava/lang/Object;
+.source "r8-map-id-d4127289246a09368a9e1d22b2939b1a8a11eb6f73a9f1427bcf353d8c747739"
+
+
+# direct methods
+.method public static a()Lcom/vungle/ads/internal/task/f;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lcom/vungle/ads/internal/task/f;
+
+    .line 2
+    .line 3
+    const-string v1, "ResendTpatJob"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Lcom/vungle/ads/internal/task/f;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    iput v1, v0, Lcom/vungle/ads/internal/task/f;->e:I
+
+    .line 10
+    .line 11
+    const/4 v1, 0x1
+
+    .line 12
+    iput-boolean v1, v0, Lcom/vungle/ads/internal/task/f;->b:Z
+
+    .line 13
+    .line 14
+    return-object v0
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method

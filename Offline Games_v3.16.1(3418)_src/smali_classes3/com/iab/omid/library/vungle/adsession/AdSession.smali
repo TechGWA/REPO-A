@@ -1,0 +1,125 @@
+.class public abstract Lcom/iab/omid/library/vungle/adsession/AdSession;
+.super Ljava/lang/Object;
+.source "r8-map-id-d4127289246a09368a9e1d22b2939b1a8a11eb6f73a9f1427bcf353d8c747739"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+.end method
+
+.method public static createAdSession(Lcom/iab/omid/library/vungle/adsession/AdSessionConfiguration;Lcom/iab/omid/library/vungle/adsession/AdSessionContext;)Lcom/iab/omid/library/vungle/adsession/AdSession;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/iab/omid/library/vungle/utils/g;->a()V
+
+    .line 2
+    .line 3
+    .line 4
+    const-string v0, "AdSessionConfiguration is null"
+
+    .line 5
+    .line 6
+    invoke-static {p0, v0}, Lcom/iab/omid/library/vungle/utils/g;->a(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 7
+    .line 8
+    .line 9
+    const-string v0, "AdSessionContext is null"
+
+    .line 10
+    .line 11
+    invoke-static {p1, v0}, Lcom/iab/omid/library/vungle/utils/g;->a(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    new-instance v0, Lcom/iab/omid/library/vungle/adsession/a;
+
+    .line 15
+    .line 16
+    invoke-direct {v0, p0, p1}, Lcom/iab/omid/library/vungle/adsession/a;-><init>(Lcom/iab/omid/library/vungle/adsession/AdSessionConfiguration;Lcom/iab/omid/library/vungle/adsession/AdSessionContext;)V
+
+    .line 17
+    .line 18
+    .line 19
+    return-object v0
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+.end method
+
+
+# virtual methods
+.method public abstract addFriendlyObstruction(Landroid/view/View;Lcom/iab/omid/library/vungle/adsession/FriendlyObstructionPurpose;Ljava/lang/String;)V
+    .param p3    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract error(Lcom/iab/omid/library/vungle/adsession/ErrorType;Ljava/lang/String;)V
+.end method
+
+.method public abstract finish()V
+.end method
+
+.method public abstract registerAdView(Landroid/view/View;)V
+    .param p1    # Landroid/view/View;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+.end method
+
+.method public abstract removeAllFriendlyObstructions()V
+.end method
+
+.method public abstract removeFriendlyObstruction(Landroid/view/View;)V
+.end method
+
+.method public abstract setPossibleObstructionListener(Lcom/iab/omid/library/vungle/adsession/PossibleObstructionListener;)V
+.end method
+
+.method public abstract start()V
+.end method

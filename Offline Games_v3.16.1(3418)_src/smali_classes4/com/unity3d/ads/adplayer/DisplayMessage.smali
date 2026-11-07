@@ -1,0 +1,130 @@
+.class public abstract Lcom/unity3d/ads/adplayer/DisplayMessage;
+.super Ljava/lang/Object;
+.source "r8-map-id-d4127289246a09368a9e1d22b2939b1a8a11eb6f73a9f1427bcf353d8c747739"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/unity3d/ads/adplayer/DisplayMessage$DisplayDestroyed;,
+        Lcom/unity3d/ads/adplayer/DisplayMessage$DisplayError;,
+        Lcom/unity3d/ads/adplayer/DisplayMessage$DisplayFinishRequest;,
+        Lcom/unity3d/ads/adplayer/DisplayMessage$DisplayReady;,
+        Lcom/unity3d/ads/adplayer/DisplayMessage$DisplayStarted;,
+        Lcom/unity3d/ads/adplayer/DisplayMessage$FocusChanged;,
+        Lcom/unity3d/ads/adplayer/DisplayMessage$OpenUrl;,
+        Lcom/unity3d/ads/adplayer/DisplayMessage$OpenUrlResult;,
+        Lcom/unity3d/ads/adplayer/DisplayMessage$SetOrientation;,
+        Lcom/unity3d/ads/adplayer/DisplayMessage$VisibilityChanged;,
+        Lcom/unity3d/ads/adplayer/DisplayMessage$WebViewInstanceRequest;,
+        Lcom/unity3d/ads/adplayer/DisplayMessage$WebViewInstanceResponse;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000D\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u00086\u0018\u00002\u00020\u0001:\u000c\u0007\u0008\t\n\u000b\u000c\r\u000e\u000f\u0010\u0011\u0012B\u000f\u0008\u0004\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0005\u0010\u0006\u0082\u0001\u000c\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u00a8\u0006\u001f"
+    }
+    d2 = {
+        "Lcom/unity3d/ads/adplayer/DisplayMessage;",
+        "",
+        "opportunityId",
+        "",
+        "(Ljava/lang/String;)V",
+        "getOpportunityId",
+        "()Ljava/lang/String;",
+        "DisplayDestroyed",
+        "DisplayError",
+        "DisplayFinishRequest",
+        "DisplayReady",
+        "DisplayStarted",
+        "FocusChanged",
+        "OpenUrl",
+        "OpenUrlResult",
+        "SetOrientation",
+        "VisibilityChanged",
+        "WebViewInstanceRequest",
+        "WebViewInstanceResponse",
+        "Lcom/unity3d/ads/adplayer/DisplayMessage$DisplayDestroyed;",
+        "Lcom/unity3d/ads/adplayer/DisplayMessage$DisplayError;",
+        "Lcom/unity3d/ads/adplayer/DisplayMessage$DisplayFinishRequest;",
+        "Lcom/unity3d/ads/adplayer/DisplayMessage$DisplayReady;",
+        "Lcom/unity3d/ads/adplayer/DisplayMessage$DisplayStarted;",
+        "Lcom/unity3d/ads/adplayer/DisplayMessage$FocusChanged;",
+        "Lcom/unity3d/ads/adplayer/DisplayMessage$OpenUrl;",
+        "Lcom/unity3d/ads/adplayer/DisplayMessage$OpenUrlResult;",
+        "Lcom/unity3d/ads/adplayer/DisplayMessage$SetOrientation;",
+        "Lcom/unity3d/ads/adplayer/DisplayMessage$VisibilityChanged;",
+        "Lcom/unity3d/ads/adplayer/DisplayMessage$WebViewInstanceRequest;",
+        "Lcom/unity3d/ads/adplayer/DisplayMessage$WebViewInstanceResponse;",
+        "unity-ads_defaultRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private final opportunityId:Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/unity3d/ads/adplayer/DisplayMessage;->opportunityId:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/String;Lkotlin/jvm/internal/g;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Lcom/unity3d/ads/adplayer/DisplayMessage;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getOpportunityId()Ljava/lang/String;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/unity3d/ads/adplayer/DisplayMessage;->opportunityId:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method

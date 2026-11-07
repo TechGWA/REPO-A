@@ -1,0 +1,84 @@
+.class public final Lcom/inmobi/media/q1;
+.super Ljava/lang/Object;
+.source "r8-map-id-d4127289246a09368a9e1d22b2939b1a8a11eb6f73a9f1427bcf353d8c747739"
+
+
+# instance fields
+.field public final a:Lcom/inmobi/media/ah;
+
+.field public final b:Lcom/inmobi/media/core/config/models/AdConfig;
+
+
+# direct methods
+.method public constructor <init>(Lcom/inmobi/media/Tc;Lcom/inmobi/media/ah;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p2, p0, Lcom/inmobi/media/q1;->a:Lcom/inmobi/media/ah;
+
+    .line 8
+    .line 9
+    const-class p1, Lcom/inmobi/media/core/config/models/AdConfig;
+
+    .line 10
+    .line 11
+    sget-object p2, Lcom/inmobi/media/g4;->a:Lcom/inmobi/media/q4;
+
+    .line 12
+    .line 13
+    invoke-virtual {p2, p1}, Lcom/inmobi/media/q4;->a(Ljava/lang/Class;)Lcom/inmobi/media/core/config/models/Config;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    check-cast p1, Lcom/inmobi/media/core/config/models/AdConfig;
+
+    .line 18
+    .line 19
+    iput-object p1, p0, Lcom/inmobi/media/q1;->b:Lcom/inmobi/media/core/config/models/AdConfig;
+
+    .line 20
+    .line 21
+    return-void
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+.end method

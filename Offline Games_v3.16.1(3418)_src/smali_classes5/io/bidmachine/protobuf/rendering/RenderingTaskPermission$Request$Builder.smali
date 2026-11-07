@@ -1,0 +1,2989 @@
+.class public final Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+.super Lcom/explorestack/protobuf/f4;
+.source "r8-map-id-d4127289246a09368a9e1d22b2939b1a8a11eb6f73a9f1427bcf353d8c747739"
+
+# interfaces
+.implements Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$RequestOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Builder"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/explorestack/protobuf/f4;",
+        "Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$RequestOrBuilder;"
+    }
+.end annotation
+
+
+# instance fields
+.field private bitField0_:I
+
+.field private eventName_:I
+
+.field private eventSource_:Ljava/lang/Object;
+
+.field private eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/explorestack/protobuf/p7;"
+        }
+    .end annotation
+.end field
+
+.field private eventTasks_:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eventValue_:Ljava/lang/Object;
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0, v0}, Lcom/explorestack/protobuf/f4;-><init>(Lcom/explorestack/protobuf/g4;)V
+
+    const/4 v0, 0x0
+
+    .line 2
+    iput v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventName_:I
+
+    .line 3
+    const-string v0, ""
+
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventSource_:Ljava/lang/Object;
+
+    .line 4
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventValue_:Ljava/lang/Object;
+
+    .line 5
+    sget-object v0, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
+
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 6
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->maybeForceBuilderInitialization()V
+
+    return-void
+.end method
+
+.method private constructor <init>(Lcom/explorestack/protobuf/g4;)V
+    .locals 0
+
+    .line 9
+    invoke-direct {p0, p1}, Lcom/explorestack/protobuf/f4;-><init>(Lcom/explorestack/protobuf/g4;)V
+
+    const/4 p1, 0x0
+
+    .line 10
+    iput p1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventName_:I
+
+    .line 11
+    const-string p1, ""
+
+    iput-object p1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventSource_:Ljava/lang/Object;
+
+    .line 12
+    iput-object p1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventValue_:Ljava/lang/Object;
+
+    .line 13
+    sget-object p1, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
+
+    iput-object p1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 14
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->maybeForceBuilderInitialization()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/explorestack/protobuf/g4;Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$1;)V
+    .locals 0
+
+    .line 7
+    invoke-direct {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;-><init>(Lcom/explorestack/protobuf/g4;)V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$1;)V
+    .locals 0
+
+    .line 8
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;-><init>()V
+
+    return-void
+.end method
+
+.method private ensureEventTasksIsMutable()V
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    .line 2
+    .line 3
+    and-int/lit8 v0, v0, 0x1
+
+    .line 4
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 10
+    .line 11
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 12
+    .line 13
+    .line 14
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 15
+    .line 16
+    iget v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    .line 17
+    .line 18
+    or-int/lit8 v0, v0, 0x1
+
+    .line 19
+    .line 20
+    iput v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    .line 21
+    .line 22
+    :cond_0
+    return-void
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+.end method
+
+.method public static final getDescriptor()Lcom/explorestack/protobuf/Descriptors$Descriptor;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lio/bidmachine/protobuf/rendering/TaskPermissionProto;->internal_static_bidmachine_protobuf_RenderingTaskPermission_Request_descriptor:Lcom/explorestack/protobuf/Descriptors$Descriptor;
+
+    .line 2
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+.method private getEventTasksFieldBuilder()Lcom/explorestack/protobuf/p7;
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/explorestack/protobuf/p7;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_1
+
+    .line 4
+    .line 5
+    new-instance v0, Lcom/explorestack/protobuf/p7;
+
+    .line 6
+    .line 7
+    iget-object v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 8
+    .line 9
+    iget v2, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    .line 10
+    .line 11
+    const/4 v3, 0x1
+
+    .line 12
+    and-int/2addr v2, v3
+
+    .line 13
+    if-eqz v2, :cond_0
+
+    .line 14
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_0
+    const/4 v3, 0x0
+
+    .line 17
+    :goto_0
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->getParentForChildren()Lcom/explorestack/protobuf/g4;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v2
+
+    .line 21
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->isClean()Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v4
+
+    .line 25
+    invoke-direct {v0, v1, v3, v2, v4}, Lcom/explorestack/protobuf/p7;-><init>(Ljava/util/List;ZLcom/explorestack/protobuf/g4;Z)V
+
+    .line 26
+    .line 27
+    .line 28
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    .line 29
+    .line 30
+    const/4 v0, 0x0
+
+    .line 31
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 32
+    .line 33
+    :cond_1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    .line 34
+    .line 35
+    return-object v0
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+.end method
+
+.method private maybeForceBuilderInitialization()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$200()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->getEventTasksFieldBuilder()Lcom/explorestack/protobuf/p7;
+
+    .line 8
+    .line 9
+    .line 10
+    :cond_0
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+
+# virtual methods
+.method public addAllEventTasks(Ljava/lang/Iterable;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Iterable<",
+            "+",
+            "Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;",
+            ">;)",
+            "Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->ensureEventTasksIsMutable()V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 9
+    .line 10
+    invoke-static {p1, v0}, Lcom/explorestack/protobuf/b;->addAll(Ljava/lang/Iterable;Ljava/util/List;)V
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 14
+    .line 15
+    .line 16
+    return-object p0
+
+    .line 17
+    :cond_0
+    invoke-virtual {v0, p1}, Lcom/explorestack/protobuf/p7;->a(Ljava/lang/Iterable;)V
+
+    .line 18
+    .line 19
+    .line 20
+    return-object p0
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public addEventTasks(ILio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 18
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    if-nez v0, :cond_0
+
+    .line 19
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->ensureEventTasksIsMutable()V
+
+    .line 20
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    invoke-virtual {p2}, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;->build()Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;
+
+    move-result-object p2
+
+    invoke-interface {v0, p1, p2}, Ljava/util/List;->add(ILjava/lang/Object;)V
+
+    .line 21
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    return-object p0
+
+    .line 22
+    :cond_0
+    invoke-virtual {p2}, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;->build()Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;
+
+    move-result-object p2
+
+    invoke-virtual {v0, p1, p2}, Lcom/explorestack/protobuf/p7;->d(ILcom/explorestack/protobuf/AbstractMessage;)V
+
+    return-object p0
+.end method
+
+.method public addEventTasks(ILio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 7
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    if-nez v0, :cond_0
+
+    .line 8
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 9
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->ensureEventTasksIsMutable()V
+
+    .line 10
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    invoke-interface {v0, p1, p2}, Ljava/util/List;->add(ILjava/lang/Object;)V
+
+    .line 11
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    return-object p0
+
+    .line 12
+    :cond_0
+    invoke-virtual {v0, p1, p2}, Lcom/explorestack/protobuf/p7;->d(ILcom/explorestack/protobuf/AbstractMessage;)V
+
+    return-object p0
+.end method
+
+.method public addEventTasks(Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 13
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    if-nez v0, :cond_0
+
+    .line 14
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->ensureEventTasksIsMutable()V
+
+    .line 15
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    invoke-virtual {p1}, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;->build()Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;
+
+    move-result-object p1
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 16
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    return-object p0
+
+    .line 17
+    :cond_0
+    invoke-virtual {p1}, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;->build()Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Lcom/explorestack/protobuf/p7;->e(Lcom/explorestack/protobuf/AbstractMessage;)V
+
+    return-object p0
+.end method
+
+.method public addEventTasks(Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    if-nez v0, :cond_0
+
+    .line 2
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 3
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->ensureEventTasksIsMutable()V
+
+    .line 4
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 5
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    return-object p0
+
+    .line 6
+    :cond_0
+    invoke-virtual {v0, p1}, Lcom/explorestack/protobuf/p7;->e(Lcom/explorestack/protobuf/AbstractMessage;)V
+
+    return-object p0
+.end method
+
+.method public addEventTasksBuilder()Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->getEventTasksFieldBuilder()Lcom/explorestack/protobuf/p7;
+
+    move-result-object v0
+
+    .line 2
+    invoke-static {}, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;->getDefaultInstance()Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;
+
+    move-result-object v1
+
+    .line 3
+    invoke-virtual {v0, v1}, Lcom/explorestack/protobuf/p7;->c(Lcom/explorestack/protobuf/x4;)Lcom/explorestack/protobuf/AbstractMessage$Builder;
+
+    move-result-object v0
+
+    check-cast v0, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;
+
+    return-object v0
+.end method
+
+.method public addEventTasksBuilder(I)Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;
+    .locals 2
+
+    .line 4
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->getEventTasksFieldBuilder()Lcom/explorestack/protobuf/p7;
+
+    move-result-object v0
+
+    .line 5
+    invoke-static {}, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;->getDefaultInstance()Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;
+
+    move-result-object v1
+
+    .line 6
+    invoke-virtual {v0, p1, v1}, Lcom/explorestack/protobuf/p7;->b(ILcom/explorestack/protobuf/x4;)Lcom/explorestack/protobuf/AbstractMessage$Builder;
+
+    move-result-object p1
+
+    check-cast p1, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;
+
+    return-object p1
+.end method
+
+.method public bridge synthetic addRepeatedField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/explorestack/protobuf/Message$Builder;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->addRepeatedField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic addRepeatedField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/explorestack/protobuf/f4;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->addRepeatedField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public addRepeatedField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 0
+
+    .line 3
+    invoke-super {p0, p1, p2}, Lcom/explorestack/protobuf/f4;->addRepeatedField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/explorestack/protobuf/f4;
+
+    return-object p0
+.end method
+
+.method public bridge synthetic build()Lcom/explorestack/protobuf/Message;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->build()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic build()Lcom/explorestack/protobuf/MessageLite;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->build()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public build()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+    .locals 2
+
+    .line 3
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->buildPartial()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    move-result-object v0
+
+    .line 4
+    invoke-virtual {v0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->isInitialized()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    return-object v0
+
+    .line 5
+    :cond_0
+    invoke-static {v0}, Lcom/explorestack/protobuf/AbstractMessage$Builder;->newUninitializedMessageException(Lcom/explorestack/protobuf/Message;)Lcom/explorestack/protobuf/o8;
+
+    move-result-object v0
+
+    throw v0
+.end method
+
+.method public bridge synthetic buildPartial()Lcom/explorestack/protobuf/Message;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->buildPartial()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic buildPartial()Lcom/explorestack/protobuf/MessageLite;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->buildPartial()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public buildPartial()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+    .locals 2
+
+    .line 3
+    new-instance v0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;-><init>(Lcom/explorestack/protobuf/f4;Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$1;)V
+
+    .line 4
+    iget v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventName_:I
+
+    invoke-static {v0, v1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$402(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;I)I
+
+    .line 5
+    iget-object v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventSource_:Ljava/lang/Object;
+
+    invoke-static {v0, v1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$502(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    iget-object v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventValue_:Ljava/lang/Object;
+
+    invoke-static {v0, v1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$602(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 7
+    iget-object v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    if-nez v1, :cond_1
+
+    .line 8
+    iget v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    and-int/lit8 v1, v1, 0x1
+
+    if-eqz v1, :cond_0
+
+    .line 9
+    iget-object v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 10
+    iget v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    and-int/lit8 v1, v1, -0x2
+
+    iput v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    .line 11
+    :cond_0
+    iget-object v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    invoke-static {v0, v1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$702(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;Ljava/util/List;)Ljava/util/List;
+
+    goto :goto_0
+
+    .line 12
+    :cond_1
+    invoke-virtual {v1}, Lcom/explorestack/protobuf/p7;->f()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$702(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;Ljava/util/List;)Ljava/util/List;
+
+    .line 13
+    :goto_0
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onBuilt()V
+
+    return-object v0
+.end method
+
+.method public bridge synthetic clear()Lcom/explorestack/protobuf/AbstractMessage$Builder;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clear()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic clear()Lcom/explorestack/protobuf/Message$Builder;
+    .locals 1
+
+    .line 3
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clear()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic clear()Lcom/explorestack/protobuf/MessageLite$Builder;
+    .locals 1
+
+    .line 4
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clear()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic clear()Lcom/explorestack/protobuf/f4;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clear()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public clear()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 5
+    invoke-super {p0}, Lcom/explorestack/protobuf/f4;->clear()Lcom/explorestack/protobuf/f4;
+
+    const/4 v0, 0x0
+
+    .line 6
+    iput v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventName_:I
+
+    .line 7
+    const-string v0, ""
+
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventSource_:Ljava/lang/Object;
+
+    .line 8
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventValue_:Ljava/lang/Object;
+
+    .line 9
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    if-nez v0, :cond_0
+
+    .line 10
+    sget-object v0, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
+
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 11
+    iget v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    and-int/lit8 v0, v0, -0x2
+
+    iput v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    return-object p0
+
+    .line 12
+    :cond_0
+    invoke-virtual {v0}, Lcom/explorestack/protobuf/p7;->g()V
+
+    return-object p0
+.end method
+
+.method public clearEventName()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventName_:I
+
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 5
+    .line 6
+    .line 7
+    return-object p0
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+.method public clearEventSource()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->getDefaultInstance()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->getEventSource()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventSource_:Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 12
+    .line 13
+    .line 14
+    return-object p0
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+.method public clearEventTasks()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    sget-object v0, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
+
+    .line 6
+    .line 7
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 8
+    .line 9
+    iget v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    .line 10
+    .line 11
+    and-int/lit8 v0, v0, -0x2
+
+    .line 12
+    .line 13
+    iput v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    .line 14
+    .line 15
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 16
+    .line 17
+    .line 18
+    return-object p0
+
+    .line 19
+    :cond_0
+    invoke-virtual {v0}, Lcom/explorestack/protobuf/p7;->g()V
+
+    .line 20
+    .line 21
+    .line 22
+    return-object p0
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+.end method
+
+.method public clearEventValue()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->getDefaultInstance()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->getEventValue()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventValue_:Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 12
+    .line 13
+    .line 14
+    return-object p0
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+.method public bridge synthetic clearField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;)Lcom/explorestack/protobuf/Message$Builder;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clearField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic clearField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;)Lcom/explorestack/protobuf/f4;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clearField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public clearField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 0
+
+    .line 3
+    invoke-super {p0, p1}, Lcom/explorestack/protobuf/f4;->clearField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;)Lcom/explorestack/protobuf/f4;
+
+    return-object p0
+.end method
+
+.method public bridge synthetic clearOneof(Lcom/explorestack/protobuf/Descriptors$OneofDescriptor;)Lcom/explorestack/protobuf/AbstractMessage$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clearOneof(Lcom/explorestack/protobuf/Descriptors$OneofDescriptor;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic clearOneof(Lcom/explorestack/protobuf/Descriptors$OneofDescriptor;)Lcom/explorestack/protobuf/Message$Builder;
+    .locals 0
+
+    .line 3
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clearOneof(Lcom/explorestack/protobuf/Descriptors$OneofDescriptor;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic clearOneof(Lcom/explorestack/protobuf/Descriptors$OneofDescriptor;)Lcom/explorestack/protobuf/f4;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clearOneof(Lcom/explorestack/protobuf/Descriptors$OneofDescriptor;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public clearOneof(Lcom/explorestack/protobuf/Descriptors$OneofDescriptor;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 0
+
+    .line 4
+    invoke-super {p0, p1}, Lcom/explorestack/protobuf/f4;->clearOneof(Lcom/explorestack/protobuf/Descriptors$OneofDescriptor;)Lcom/explorestack/protobuf/f4;
+
+    return-object p0
+.end method
+
+.method public bridge synthetic clone()Lcom/explorestack/protobuf/AbstractMessage$Builder;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clone()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic clone()Lcom/explorestack/protobuf/Message$Builder;
+    .locals 1
+
+    .line 4
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clone()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic clone()Lcom/explorestack/protobuf/MessageLite$Builder;
+    .locals 1
+
+    .line 5
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clone()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic clone()Lcom/explorestack/protobuf/b;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clone()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic clone()Lcom/explorestack/protobuf/f4;
+    .locals 1
+
+    .line 3
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clone()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public clone()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 7
+    invoke-super {p0}, Lcom/explorestack/protobuf/f4;->clone()Lcom/explorestack/protobuf/f4;
+
+    move-result-object v0
+
+    check-cast v0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic clone()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/CloneNotSupportedException;
+        }
+    .end annotation
+
+    .line 6
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->clone()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getDefaultInstanceForType()Lcom/explorestack/protobuf/Message;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->getDefaultInstanceForType()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getDefaultInstanceForType()Lcom/explorestack/protobuf/MessageLite;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->getDefaultInstanceForType()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getDefaultInstanceForType()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+    .locals 1
+
+    .line 3
+    invoke-static {}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->getDefaultInstance()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getDescriptorForType()Lcom/explorestack/protobuf/Descriptors$Descriptor;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lio/bidmachine/protobuf/rendering/TaskPermissionProto;->internal_static_bidmachine_protobuf_RenderingTaskPermission_Request_descriptor:Lcom/explorestack/protobuf/Descriptors$Descriptor;
+
+    .line 2
+    .line 3
+    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+.method public getEventName()Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$EventName;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventName_:I
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$EventName;->valueOf(I)Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$EventName;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    sget-object v0, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$EventName;->UNRECOGNIZED:Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$EventName;
+
+    .line 10
+    .line 11
+    :cond_0
+    return-object v0
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+.method public getEventNameValue()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventName_:I
+
+    .line 2
+    .line 3
+    return v0
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+.method public getEventSource()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventSource_:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    instance-of v1, v0, Ljava/lang/String;
+
+    .line 4
+    .line 5
+    if-nez v1, :cond_0
+
+    .line 6
+    .line 7
+    check-cast v0, Lcom/explorestack/protobuf/ByteString;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Lcom/explorestack/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventSource_:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    return-object v0
+
+    .line 16
+    :cond_0
+    check-cast v0, Ljava/lang/String;
+
+    .line 17
+    .line 18
+    return-object v0
+.end method
+
+.method public getEventSourceBytes()Lcom/explorestack/protobuf/ByteString;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventSource_:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    instance-of v1, v0, Ljava/lang/String;
+
+    .line 4
+    .line 5
+    if-eqz v1, :cond_0
+
+    .line 6
+    .line 7
+    check-cast v0, Ljava/lang/String;
+
+    .line 8
+    .line 9
+    invoke-static {v0}, Lcom/explorestack/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/explorestack/protobuf/ByteString;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventSource_:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    return-object v0
+
+    .line 16
+    :cond_0
+    check-cast v0, Lcom/explorestack/protobuf/ByteString;
+
+    .line 17
+    .line 18
+    return-object v0
+.end method
+
+.method public getEventTasks(I)Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 6
+    .line 7
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    check-cast p1, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;
+
+    .line 12
+    .line 13
+    return-object p1
+
+    .line 14
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 15
+    invoke-virtual {v0, p1, v1}, Lcom/explorestack/protobuf/p7;->l(IZ)Lcom/explorestack/protobuf/AbstractMessage;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    check-cast p1, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;
+
+    .line 20
+    .line 21
+    return-object p1
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public getEventTasksBuilder(I)Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->getEventTasksFieldBuilder()Lcom/explorestack/protobuf/p7;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0, p1}, Lcom/explorestack/protobuf/p7;->j(I)Lcom/explorestack/protobuf/AbstractMessage$Builder;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    check-cast p1, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;
+
+    .line 10
+    .line 11
+    return-object p1
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public getEventTasksBuilderList()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->getEventTasksFieldBuilder()Lcom/explorestack/protobuf/p7;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/explorestack/protobuf/p7;->k()Lcom/explorestack/protobuf/m7;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+.method public getEventTasksCount()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 6
+    .line 7
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    return v0
+
+    .line 12
+    :cond_0
+    iget-object v0, v0, Lcom/explorestack/protobuf/p7;->b:Ljava/util/List;
+
+    .line 13
+    .line 14
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    return v0
+.end method
+
+.method public getEventTasksList()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 6
+    .line 7
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    return-object v0
+
+    .line 12
+    :cond_0
+    invoke-virtual {v0}, Lcom/explorestack/protobuf/p7;->m()Lcom/explorestack/protobuf/n7;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    return-object v0
+    .line 17
+    .line 18
+.end method
+
+.method public getEventTasksOrBuilder(I)Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$TaskOrBuilder;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 6
+    .line 7
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    check-cast p1, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$TaskOrBuilder;
+
+    .line 12
+    .line 13
+    return-object p1
+
+    .line 14
+    :cond_0
+    invoke-virtual {v0, p1}, Lcom/explorestack/protobuf/p7;->n(I)Lcom/explorestack/protobuf/MessageOrBuilder;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    check-cast p1, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$TaskOrBuilder;
+
+    .line 19
+    .line 20
+    return-object p1
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public getEventTasksOrBuilderList()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "+",
+            "Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$TaskOrBuilder;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lcom/explorestack/protobuf/p7;->o()Lcom/explorestack/protobuf/o7;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+
+    .line 10
+    :cond_0
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 11
+    .line 12
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    return-object v0
+    .line 17
+    .line 18
+.end method
+
+.method public getEventValue()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventValue_:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    instance-of v1, v0, Ljava/lang/String;
+
+    .line 4
+    .line 5
+    if-nez v1, :cond_0
+
+    .line 6
+    .line 7
+    check-cast v0, Lcom/explorestack/protobuf/ByteString;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Lcom/explorestack/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventValue_:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    return-object v0
+
+    .line 16
+    :cond_0
+    check-cast v0, Ljava/lang/String;
+
+    .line 17
+    .line 18
+    return-object v0
+.end method
+
+.method public getEventValueBytes()Lcom/explorestack/protobuf/ByteString;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventValue_:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    instance-of v1, v0, Ljava/lang/String;
+
+    .line 4
+    .line 5
+    if-eqz v1, :cond_0
+
+    .line 6
+    .line 7
+    check-cast v0, Ljava/lang/String;
+
+    .line 8
+    .line 9
+    invoke-static {v0}, Lcom/explorestack/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/explorestack/protobuf/ByteString;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventValue_:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    return-object v0
+
+    .line 16
+    :cond_0
+    check-cast v0, Lcom/explorestack/protobuf/ByteString;
+
+    .line 17
+    .line 18
+    return-object v0
+.end method
+
+.method public internalGetFieldAccessorTable()Lcom/explorestack/protobuf/v4;
+    .locals 3
+
+    .line 1
+    sget-object v0, Lio/bidmachine/protobuf/rendering/TaskPermissionProto;->internal_static_bidmachine_protobuf_RenderingTaskPermission_Request_fieldAccessorTable:Lcom/explorestack/protobuf/v4;
+
+    .line 2
+    .line 3
+    const-class v1, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    .line 4
+    .line 5
+    const-class v2, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    .line 6
+    .line 7
+    invoke-virtual {v0, v1, v2}, Lcom/explorestack/protobuf/v4;->c(Ljava/lang/Class;Ljava/lang/Class;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object v0
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+.method public final isInitialized()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    return v0
+    .line 3
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+.end method
+
+.method public bridge synthetic mergeFrom(Lcom/explorestack/protobuf/Message;)Lcom/explorestack/protobuf/AbstractMessage$Builder;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->mergeFrom(Lcom/explorestack/protobuf/Message;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic mergeFrom(Lcom/explorestack/protobuf/r;Lcom/explorestack/protobuf/n3;)Lcom/explorestack/protobuf/AbstractMessage$Builder;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->mergeFrom(Lcom/explorestack/protobuf/r;Lcom/explorestack/protobuf/n3;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic mergeFrom(Lcom/explorestack/protobuf/Message;)Lcom/explorestack/protobuf/Message$Builder;
+    .locals 0
+
+    .line 5
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->mergeFrom(Lcom/explorestack/protobuf/Message;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic mergeFrom(Lcom/explorestack/protobuf/r;Lcom/explorestack/protobuf/n3;)Lcom/explorestack/protobuf/Message$Builder;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 4
+    invoke-virtual {p0, p1, p2}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->mergeFrom(Lcom/explorestack/protobuf/r;Lcom/explorestack/protobuf/n3;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic mergeFrom(Lcom/explorestack/protobuf/r;Lcom/explorestack/protobuf/n3;)Lcom/explorestack/protobuf/MessageLite$Builder;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 6
+    invoke-virtual {p0, p1, p2}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->mergeFrom(Lcom/explorestack/protobuf/r;Lcom/explorestack/protobuf/n3;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic mergeFrom(Lcom/explorestack/protobuf/r;Lcom/explorestack/protobuf/n3;)Lcom/explorestack/protobuf/b;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 3
+    invoke-virtual {p0, p1, p2}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->mergeFrom(Lcom/explorestack/protobuf/r;Lcom/explorestack/protobuf/n3;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public mergeFrom(Lcom/explorestack/protobuf/Message;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 7
+    instance-of v0, p1, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    if-eqz v0, :cond_0
+
+    .line 8
+    check-cast p1, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->mergeFrom(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 9
+    :cond_0
+    invoke-super {p0, p1}, Lcom/explorestack/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/explorestack/protobuf/Message;)Lcom/explorestack/protobuf/AbstractMessage$Builder;
+
+    return-object p0
+.end method
+
+.method public mergeFrom(Lcom/explorestack/protobuf/r;Lcom/explorestack/protobuf/n3;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    .line 41
+    :try_start_0
+    invoke-static {}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$1000()Lcom/explorestack/protobuf/h7;
+
+    move-result-object v1
+
+    invoke-interface {v1, p1, p2}, Lcom/explorestack/protobuf/h7;->parsePartialFrom(Lcom/explorestack/protobuf/r;Lcom/explorestack/protobuf/n3;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+    :try_end_0
+    .catch Lcom/explorestack/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-eqz p1, :cond_0
+
+    .line 42
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->mergeFrom(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    :cond_0
+    return-object p0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p1
+
+    .line 43
+    :try_start_1
+    invoke-virtual {p1}, Lcom/explorestack/protobuf/InvalidProtocolBufferException;->getUnfinishedMessage()Lcom/explorestack/protobuf/MessageLite;
+
+    move-result-object p2
+
+    check-cast p2, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 44
+    :try_start_2
+    invoke-virtual {p1}, Lcom/explorestack/protobuf/InvalidProtocolBufferException;->unwrapIOException()Ljava/io/IOException;
+
+    move-result-object p1
+
+    throw p1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    :catchall_1
+    move-exception p1
+
+    move-object v0, p2
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 45
+    invoke-virtual {p0, v0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->mergeFrom(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    .line 46
+    :cond_1
+    throw p1
+.end method
+
+.method public mergeFrom(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 2
+
+    .line 10
+    invoke-static {}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->getDefaultInstance()Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;
+
+    move-result-object v0
+
+    if-ne p1, v0, :cond_0
+
+    return-object p0
+
+    .line 11
+    :cond_0
+    invoke-static {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$400(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)I
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 12
+    invoke-virtual {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->getEventNameValue()I
+
+    move-result v0
+
+    invoke-virtual {p0, v0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->setEventNameValue(I)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    .line 13
+    :cond_1
+    invoke-virtual {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->getEventSource()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    .line 14
+    invoke-static {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$500(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventSource_:Ljava/lang/Object;
+
+    .line 15
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 16
+    :cond_2
+    invoke-virtual {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->getEventValue()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    .line 17
+    invoke-static {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$600(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventValue_:Ljava/lang/Object;
+
+    .line 18
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 19
+    :cond_3
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    if-nez v0, :cond_5
+
+    .line 20
+    invoke-static {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$700(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v0
+
+    if-nez v0, :cond_8
+
+    .line 21
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    .line 22
+    invoke-static {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$700(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)Ljava/util/List;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 23
+    iget v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    and-int/lit8 v0, v0, -0x2
+
+    iput v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    goto :goto_0
+
+    .line 24
+    :cond_4
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->ensureEventTasksIsMutable()V
+
+    .line 25
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    invoke-static {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$700(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 26
+    :goto_0
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    goto :goto_1
+
+    .line 27
+    :cond_5
+    invoke-static {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$700(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v0
+
+    if-nez v0, :cond_8
+
+    .line 28
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    .line 29
+    iget-object v0, v0, Lcom/explorestack/protobuf/p7;->b:Ljava/util/List;
+
+    .line 30
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    .line 31
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    const/4 v1, 0x0
+
+    .line 32
+    iput-object v1, v0, Lcom/explorestack/protobuf/p7;->a:Lcom/explorestack/protobuf/AbstractMessage$BuilderParent;
+
+    .line 33
+    iput-object v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    .line 34
+    invoke-static {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$700(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)Ljava/util/List;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 35
+    iget v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    and-int/lit8 v0, v0, -0x2
+
+    iput v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->bitField0_:I
+
+    .line 36
+    invoke-static {}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$800()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    .line 37
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->getEventTasksFieldBuilder()Lcom/explorestack/protobuf/p7;
+
+    move-result-object v1
+
+    :cond_6
+    iput-object v1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    goto :goto_1
+
+    .line 38
+    :cond_7
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    invoke-static {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$700(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/explorestack/protobuf/p7;->a(Ljava/lang/Iterable;)V
+
+    .line 39
+    :cond_8
+    :goto_1
+    invoke-static {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$900(Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;)Lcom/explorestack/protobuf/t8;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->mergeUnknownFields(Lcom/explorestack/protobuf/t8;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    .line 40
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    return-object p0
+.end method
+
+.method public bridge synthetic mergeUnknownFields(Lcom/explorestack/protobuf/t8;)Lcom/explorestack/protobuf/AbstractMessage$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->mergeUnknownFields(Lcom/explorestack/protobuf/t8;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic mergeUnknownFields(Lcom/explorestack/protobuf/t8;)Lcom/explorestack/protobuf/Message$Builder;
+    .locals 0
+
+    .line 3
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->mergeUnknownFields(Lcom/explorestack/protobuf/t8;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic mergeUnknownFields(Lcom/explorestack/protobuf/t8;)Lcom/explorestack/protobuf/f4;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->mergeUnknownFields(Lcom/explorestack/protobuf/t8;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final mergeUnknownFields(Lcom/explorestack/protobuf/t8;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 0
+
+    .line 4
+    invoke-super {p0, p1}, Lcom/explorestack/protobuf/f4;->mergeUnknownFields(Lcom/explorestack/protobuf/t8;)Lcom/explorestack/protobuf/f4;
+
+    move-result-object p1
+
+    check-cast p1, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    return-object p1
+.end method
+
+.method public removeEventTasks(I)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->ensureEventTasksIsMutable()V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    .line 9
+    .line 10
+    invoke-interface {v0, p1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 14
+    .line 15
+    .line 16
+    return-object p0
+
+    .line 17
+    :cond_0
+    invoke-virtual {v0, p1}, Lcom/explorestack/protobuf/p7;->r(I)V
+
+    .line 18
+    .line 19
+    .line 20
+    return-object p0
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public setEventName(Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$EventName;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$EventName;->getNumber()I
+
+    .line 5
+    .line 6
+    .line 7
+    move-result p1
+
+    .line 8
+    iput p1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventName_:I
+
+    .line 9
+    .line 10
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 11
+    .line 12
+    .line 13
+    return-object p0
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public setEventNameValue(I)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventName_:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public setEventSource(Ljava/lang/String;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventSource_:Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 7
+    .line 8
+    .line 9
+    return-object p0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public setEventSourceBytes(Lcom/explorestack/protobuf/ByteString;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$1100(Lcom/explorestack/protobuf/ByteString;)V
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventSource_:Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 10
+    .line 11
+    .line 12
+    return-object p0
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public setEventTasks(ILio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 7
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    if-nez v0, :cond_0
+
+    .line 8
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->ensureEventTasksIsMutable()V
+
+    .line 9
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    invoke-virtual {p2}, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;->build()Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;
+
+    move-result-object p2
+
+    invoke-interface {v0, p1, p2}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    return-object p0
+
+    .line 11
+    :cond_0
+    invoke-virtual {p2}, Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task$Builder;->build()Lio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;
+
+    move-result-object p2
+
+    invoke-virtual {v0, p1, p2}, Lcom/explorestack/protobuf/p7;->s(ILcom/explorestack/protobuf/AbstractMessage;)V
+
+    return-object p0
+.end method
+
+.method public setEventTasks(ILio/bidmachine/protobuf/rendering/Rendering$Phase$Event$Task;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasksBuilder_:Lcom/explorestack/protobuf/p7;
+
+    if-nez v0, :cond_0
+
+    .line 2
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 3
+    invoke-direct {p0}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->ensureEventTasksIsMutable()V
+
+    .line 4
+    iget-object v0, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventTasks_:Ljava/util/List;
+
+    invoke-interface {v0, p1, p2}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    return-object p0
+
+    .line 6
+    :cond_0
+    invoke-virtual {v0, p1, p2}, Lcom/explorestack/protobuf/p7;->s(ILcom/explorestack/protobuf/AbstractMessage;)V
+
+    return-object p0
+.end method
+
+.method public setEventValue(Ljava/lang/String;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventValue_:Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 7
+    .line 8
+    .line 9
+    return-object p0
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public setEventValueBytes(Lcom/explorestack/protobuf/ByteString;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request;->access$1200(Lcom/explorestack/protobuf/ByteString;)V
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, p0, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->eventValue_:Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/f4;->onChanged()V
+
+    .line 10
+    .line 11
+    .line 12
+    return-object p0
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method
+
+.method public bridge synthetic setField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/explorestack/protobuf/Message$Builder;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->setField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic setField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/explorestack/protobuf/f4;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->setField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 0
+
+    .line 3
+    invoke-super {p0, p1, p2}, Lcom/explorestack/protobuf/f4;->setField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/explorestack/protobuf/f4;
+
+    return-object p0
+.end method
+
+.method public bridge synthetic setRepeatedField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/explorestack/protobuf/Message$Builder;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1, p2, p3}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->setRepeatedField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic setRepeatedField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/explorestack/protobuf/f4;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2, p3}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->setRepeatedField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public setRepeatedField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 0
+
+    .line 3
+    invoke-super {p0, p1, p2, p3}, Lcom/explorestack/protobuf/f4;->setRepeatedField(Lcom/explorestack/protobuf/Descriptors$FieldDescriptor;ILjava/lang/Object;)Lcom/explorestack/protobuf/f4;
+
+    return-object p0
+.end method
+
+.method public bridge synthetic setUnknownFields(Lcom/explorestack/protobuf/t8;)Lcom/explorestack/protobuf/Message$Builder;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->setUnknownFields(Lcom/explorestack/protobuf/t8;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic setUnknownFields(Lcom/explorestack/protobuf/t8;)Lcom/explorestack/protobuf/f4;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;->setUnknownFields(Lcom/explorestack/protobuf/t8;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final setUnknownFields(Lcom/explorestack/protobuf/t8;)Lio/bidmachine/protobuf/rendering/RenderingTaskPermission$Request$Builder;
+    .locals 0
+
+    .line 3
+    invoke-super {p0, p1}, Lcom/explorestack/protobuf/f4;->setUnknownFields(Lcom/explorestack/protobuf/t8;)Lcom/explorestack/protobuf/f4;
+
+    return-object p0
+.end method

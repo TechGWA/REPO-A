@@ -1,0 +1,162 @@
+.class final Lcom/ironsource/Hf$c;
+.super Lkotlin/jvm/internal/p;
+.source "r8-map-id-d4127289246a09368a9e1d22b2939b1a8a11eb6f73a9f1427bcf353d8c747739"
+
+# interfaces
+.implements Lsp/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/ironsource/Hf;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/p;",
+        "Lsp/a;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Lcom/ironsource/Hf$c;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/ironsource/Hf$c;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/ironsource/Hf$c;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/ironsource/Hf$c;->a:Lcom/ironsource/Hf$c;
+
+    .line 7
+    .line 8
+    return-void
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, v0}, Lkotlin/jvm/internal/p;-><init>(I)V
+
+    .line 3
+    .line 4
+    .line 5
+    return-void
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method
+
+
+# virtual methods
+.method public final a()Lcom/ironsource/je;
+    .locals 4
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    new-instance v0, Lcom/ironsource/je;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    const/4 v2, 0x2
+
+    .line 5
+    const/16 v3, 0x10
+
+    .line 6
+    .line 7
+    invoke-direct {v0, v3, v1, v2, v1}, Lcom/ironsource/je;-><init>(ILjava/util/concurrent/ThreadFactory;ILkotlin/jvm/internal/g;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object v0
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/ironsource/Hf$c;->a()Lcom/ironsource/je;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method

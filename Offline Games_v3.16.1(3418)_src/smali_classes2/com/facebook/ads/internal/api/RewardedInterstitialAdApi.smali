@@ -1,0 +1,57 @@
+.class public interface abstract Lcom/facebook/ads/internal/api/RewardedInterstitialAdApi;
+.super Ljava/lang/Object;
+.source "r8-map-id-d4127289246a09368a9e1d22b2939b1a8a11eb6f73a9f1427bcf353d8c747739"
+
+# interfaces
+.implements Lcom/facebook/ads/FullScreenAd;
+
+
+# annotations
+.annotation build Landroidx/annotation/Keep;
+.end annotation
+
+.annotation build Lcom/facebook/proguard/annotations/DoNotStripAny;
+.end annotation
+
+
+# virtual methods
+.method public bridge abstract synthetic buildLoadAdConfig()Lcom/facebook/ads/Ad$LoadConfigBuilder;
+.end method
+
+.method public abstract buildLoadAdConfig()Lcom/facebook/ads/RewardedInterstitialAd$RewardedInterstitialAdLoadConfigBuilder;
+.end method
+
+.method public bridge abstract synthetic buildShowAdConfig()Lcom/facebook/ads/FullScreenAd$ShowConfigBuilder;
+.end method
+
+.method public abstract buildShowAdConfig()Lcom/facebook/ads/RewardedInterstitialAd$RewardedInterstitialAdShowConfigBuilder;
+.end method
+
+.method public abstract destroy()V
+.end method
+
+.method public abstract getPlacementId()Ljava/lang/String;
+.end method
+
+.method public abstract getVideoDuration()I
+.end method
+
+.method public abstract isAdLoaded()Z
+.end method
+
+.method public abstract loadAd()V
+.end method
+
+.method public abstract loadAd(Lcom/facebook/ads/RewardedInterstitialAd$RewardedInterstitialLoadAdConfig;)V
+.end method
+
+.method public abstract setExtraHints(Lcom/facebook/ads/ExtraHints;)V
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end method
+
+.method public abstract show()Z
+.end method
+
+.method public abstract show(Lcom/facebook/ads/RewardedInterstitialAd$RewardedInterstitialShowAdConfig;)Z
+.end method

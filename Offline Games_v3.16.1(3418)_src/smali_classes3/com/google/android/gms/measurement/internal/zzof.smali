@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/google/android/gms/measurement/internal/zzof;
+.super Ljava/lang/Object;
+.source "r8-map-id-d4127289246a09368a9e1d22b2939b1a8a11eb6f73a9f1427bcf353d8c747739"
+
+
+# virtual methods
+.method public abstract a(Landroid/content/Intent;)V
+.end method
+
+.method public abstract b(Landroid/app/job/JobParameters;)V
+.end method
+
+.method public abstract zzc(I)Z
+.end method

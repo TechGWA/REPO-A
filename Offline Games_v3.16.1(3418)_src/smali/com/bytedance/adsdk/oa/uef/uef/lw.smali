@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/bytedance/adsdk/oa/uef/uef/lw;
+.super Ljava/lang/Object;
+.source "r8-map-id-d4127289246a09368a9e1d22b2939b1a8a11eb6f73a9f1427bcf353d8c747739"
+
+# interfaces
+.implements Lcom/bytedance/adsdk/oa/uef/uef/yo;
+
+
+# virtual methods
+.method public abstract uef(Landroid/graphics/Canvas;Landroid/graphics/Matrix;I)V
+.end method
+
+.method public abstract uef(Landroid/graphics/RectF;Landroid/graphics/Matrix;Z)V
+.end method

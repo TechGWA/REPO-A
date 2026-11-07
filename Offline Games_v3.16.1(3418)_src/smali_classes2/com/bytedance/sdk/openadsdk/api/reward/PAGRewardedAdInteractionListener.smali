@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/bytedance/sdk/openadsdk/api/reward/PAGRewardedAdInteractionListener;
+.super Ljava/lang/Object;
+.source "r8-map-id-d4127289246a09368a9e1d22b2939b1a8a11eb6f73a9f1427bcf353d8c747739"
+
+# interfaces
+.implements Lcom/bytedance/sdk/openadsdk/api/PAGAdListener;
+
+
+# virtual methods
+.method public abstract onUserEarnedReward(Lcom/bytedance/sdk/openadsdk/api/reward/PAGRewardItem;)V
+.end method
+
+.method public abstract onUserEarnedRewardFail(ILjava/lang/String;)V
+.end method

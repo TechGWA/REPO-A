@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "533551772984",
+    "project_id": "offlinegames-jf",
+    "storage_bucket": "offlinegames-jf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533551772984:android:85ebb503c5ba1f0027bdcd",
+        "android_client_info": {
+          "package_name": "com.JindoBlu.OfflineGames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533551772984-d7v3n3om59vaqsiivbq38k8fjuo868tv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZZNwKE5Keb5qmajVCvyIM-dkVkgmRV5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533551772984-d7v3n3om59vaqsiivbq38k8fjuo868tv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "533551772984-kqc79ac4ao9aenojso7q4ankmg3fbgoj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.JindoBlu.OfflineGamesIOS"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

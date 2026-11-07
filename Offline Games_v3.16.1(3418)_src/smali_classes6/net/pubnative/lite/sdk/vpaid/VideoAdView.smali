@@ -1,0 +1,445 @@
+.class public Lnet/pubnative/lite/sdk/vpaid/VideoAdView;
+.super Landroid/widget/FrameLayout;
+.source "r8-map-id-d4127289246a09368a9e1d22b2939b1a8a11eb6f73a9f1427bcf353d8c747739"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lnet/pubnative/lite/sdk/vpaid/VideoAdView$VisibilityListener;
+    }
+.end annotation
+
+
+# instance fields
+.field private gestureDetector:Landroid/view/GestureDetector;
+
+.field private mVisibilityListener:Lnet/pubnative/lite/sdk/vpaid/VideoAdView$VisibilityListener;
+
+.field private visibilityLastTrackedValue:I
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
+
+    const/4 p1, 0x0
+
+    .line 2
+    iput p1, p0, Lnet/pubnative/lite/sdk/vpaid/VideoAdView;->visibilityLastTrackedValue:I
+
+    .line 3
+    invoke-direct {p0}, Lnet/pubnative/lite/sdk/vpaid/VideoAdView;->init()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 0
+
+    .line 4
+    invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    const/4 p1, 0x0
+
+    .line 5
+    iput p1, p0, Lnet/pubnative/lite/sdk/vpaid/VideoAdView;->visibilityLastTrackedValue:I
+
+    .line 6
+    invoke-direct {p0}, Lnet/pubnative/lite/sdk/vpaid/VideoAdView;->init()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 0
+
+    .line 7
+    invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    const/4 p1, 0x0
+
+    .line 8
+    iput p1, p0, Lnet/pubnative/lite/sdk/vpaid/VideoAdView;->visibilityLastTrackedValue:I
+
+    .line 9
+    invoke-direct {p0}, Lnet/pubnative/lite/sdk/vpaid/VideoAdView;->init()V
+
+    return-void
+.end method
+
+.method private init()V
+    .locals 3
+
+    .line 1
+    new-instance v0, Landroid/view/GestureDetector;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    new-instance v2, Lnet/pubnative/lite/sdk/vpaid/VideoAdView$1;
+
+    .line 8
+    .line 9
+    invoke-direct {v2, p0}, Lnet/pubnative/lite/sdk/vpaid/VideoAdView$1;-><init>(Lnet/pubnative/lite/sdk/vpaid/VideoAdView;)V
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-direct {v0, v1, v2}, Landroid/view/GestureDetector;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iput-object v0, p0, Lnet/pubnative/lite/sdk/vpaid/VideoAdView;->gestureDetector:Landroid/view/GestureDetector;
+
+    .line 16
+    .line 17
+    return-void
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+.end method
+
+
+# virtual methods
+.method public onDetachedFromWindow()V
+    .locals 2
+
+    .line 1
+    invoke-super {p0}, Landroid/widget/FrameLayout;->onDetachedFromWindow()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lnet/pubnative/lite/sdk/vpaid/VideoAdView;->mVisibilityListener:Lnet/pubnative/lite/sdk/vpaid/VideoAdView$VisibilityListener;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    const/4 v1, 0x4
+
+    .line 9
+    invoke-interface {v0, v1}, Lnet/pubnative/lite/sdk/vpaid/VideoAdView$VisibilityListener;->onVisibilityChanged(I)V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    return-void
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+.end method
+
+.method public onTouchEvent(Landroid/view/MotionEvent;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lnet/pubnative/lite/sdk/vpaid/VideoAdView;->gestureDetector:Landroid/view/GestureDetector;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    const/4 v0, 0x3
+
+    .line 10
+    invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->setAction(I)V
+
+    .line 11
+    .line 12
+    .line 13
+    :cond_0
+    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result p1
+
+    .line 17
+    return p1
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+.end method
+
+.method public onVisibilityChanged(Landroid/view/View;I)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onVisibilityChanged(Landroid/view/View;I)V
+
+    .line 2
+    .line 3
+    .line 4
+    iput p2, p0, Lnet/pubnative/lite/sdk/vpaid/VideoAdView;->visibilityLastTrackedValue:I
+
+    .line 5
+    .line 6
+    iget-object p1, p0, Lnet/pubnative/lite/sdk/vpaid/VideoAdView;->mVisibilityListener:Lnet/pubnative/lite/sdk/vpaid/VideoAdView$VisibilityListener;
+
+    .line 7
+    .line 8
+    if-eqz p1, :cond_0
+
+    .line 9
+    .line 10
+    invoke-interface {p1, p2}, Lnet/pubnative/lite/sdk/vpaid/VideoAdView$VisibilityListener;->onVisibilityChanged(I)V
+
+    .line 11
+    .line 12
+    .line 13
+    :cond_0
+    return-void
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+    .line 53
+    .line 54
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
+    .line 60
+    .line 61
+    .line 62
+    .line 63
+    .line 64
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    .line 70
+    .line 71
+    .line 72
+    .line 73
+    .line 74
+    .line 75
+    .line 76
+    .line 77
+    .line 78
+    .line 79
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    .line 85
+    .line 86
+    .line 87
+    .line 88
+    .line 89
+    .line 90
+    .line 91
+    .line 92
+    .line 93
+    .line 94
+    .line 95
+    .line 96
+    .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+.end method
+
+.method public setVisibilityListener(Lnet/pubnative/lite/sdk/vpaid/VideoAdView$VisibilityListener;)V
+    .locals 1
+
+    .line 1
+    if-eqz p1, :cond_0
+
+    .line 2
+    .line 3
+    iput-object p1, p0, Lnet/pubnative/lite/sdk/vpaid/VideoAdView;->mVisibilityListener:Lnet/pubnative/lite/sdk/vpaid/VideoAdView$VisibilityListener;
+
+    .line 4
+    .line 5
+    iget v0, p0, Lnet/pubnative/lite/sdk/vpaid/VideoAdView;->visibilityLastTrackedValue:I
+
+    .line 6
+    .line 7
+    invoke-interface {p1, v0}, Lnet/pubnative/lite/sdk/vpaid/VideoAdView$VisibilityListener;->onVisibilityChanged(I)V
+
+    .line 8
+    .line 9
+    .line 10
+    :cond_0
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+    .line 50
+    .line 51
+    .line 52
+.end method

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include
+        domain="sharedpref"
+        path="com.JindoBlu.OfflineGames.v2.playerprefs.xml" />
+    <include
+        domain="sharedpref"
+        path="com.JindoBlu.OfflineGames_preferences.xml" />
+    <include
+        domain="sharedpref"
+        path="__GOOGLE_FUNDING_CHOICE_SDK_INTERNAL__.xml" />
+</full-backup-content>

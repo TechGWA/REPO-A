@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/lea_404"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ad_20dp"
+            android:src="@mipmap/zmaticoo_b_404" />
+        <TextView
+            android:textColor="@color/co_26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ad_16dp"
+            android:text="The network seems to have crashed." />
+        <Button
+            android:textSize="@dimen/cta_button_text_size16"
+            android:textColor="@color/white"
+            android:id="@id/refresh_button"
+            android:background="@drawable/cta_press_has_app_selector"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ad_80dp"
+            android:layout_marginRight="@dimen/ad_80dp"
+            android:text="Click to refresh" />
+    </LinearLayout>
+    <include
+        layout="@layout/container_wb_header" />
+</FrameLayout>
